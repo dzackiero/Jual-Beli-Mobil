@@ -16,6 +16,7 @@ Public Class SignIn
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        users = getUserFromDb()
 
     End Sub
     Function getUserFromDb()
@@ -45,14 +46,36 @@ Public Class SignIn
             Dim row As DataRow = result(i)
             Dim newUser As DataUser
             newUser = New DataUser(row(0), row(1), row(2), row(3))
-            users.Add(newUser)
+            arr.Add(newUser)
         Next
-        Return result
-    End Function
-    Function getUsers()
-
+        Return arr
     End Function
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
+        Try
+            Dim flag As Boolean = False
+            Dim usernameInput As String = textBoxUsername.Text
+            Dim passwordInput As String = textBoxPassword.Text
+            Dim LoggedUser As DataUser
 
+            For Each usr In users
+                If usr.CheckAuth(usernameInput, passwordInput) And Not flag Then
+                    flag = True
+                    LoggedUser = usr
+                End If
+            Next
+            If flag Then
+                'FormSelanjutnya.Show()
+            Else
+                MessageBox.Show("Wrong Username or Password!!!!!")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString())
+        End Try
+
+    End Sub
+
+    Private Sub SignIn_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        users = getUserFromDb()
     End Sub
 End Class
