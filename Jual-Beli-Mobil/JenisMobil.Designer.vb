@@ -23,8 +23,9 @@ Partial Class JenisMobil
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridViewJenisMobil = New System.Windows.Forms.DataGridView()
-        Me.ButtonTambahJenisMoobil = New System.Windows.Forms.Button()
+        Me.ButtonTambahJenisMobil = New System.Windows.Forms.Button()
         Me.ButtonHapusJenisMobil = New System.Windows.Forms.Button()
+        Me.ButtonEditJenisMobil = New System.Windows.Forms.Button()
         CType(Me.DataGridViewJenisMobil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,14 +39,14 @@ Partial Class JenisMobil
         Me.DataGridViewJenisMobil.Size = New System.Drawing.Size(620, 225)
         Me.DataGridViewJenisMobil.TabIndex = 0
         '
-        'ButtonTambahJenisMoobil
+        'ButtonTambahJenisMobil
         '
-        Me.ButtonTambahJenisMoobil.Location = New System.Drawing.Point(249, 433)
-        Me.ButtonTambahJenisMoobil.Name = "ButtonTambahJenisMoobil"
-        Me.ButtonTambahJenisMoobil.Size = New System.Drawing.Size(112, 69)
-        Me.ButtonTambahJenisMoobil.TabIndex = 1
-        Me.ButtonTambahJenisMoobil.Text = "Tambah Jenis Mobil"
-        Me.ButtonTambahJenisMoobil.UseVisualStyleBackColor = True
+        Me.ButtonTambahJenisMobil.Location = New System.Drawing.Point(249, 433)
+        Me.ButtonTambahJenisMobil.Name = "ButtonTambahJenisMobil"
+        Me.ButtonTambahJenisMobil.Size = New System.Drawing.Size(112, 69)
+        Me.ButtonTambahJenisMobil.TabIndex = 1
+        Me.ButtonTambahJenisMobil.Text = "Tambah Jenis Mobil"
+        Me.ButtonTambahJenisMobil.UseVisualStyleBackColor = True
         '
         'ButtonHapusJenisMobil
         '
@@ -56,13 +57,23 @@ Partial Class JenisMobil
         Me.ButtonHapusJenisMobil.Text = "Hapus Jenis Mobil"
         Me.ButtonHapusJenisMobil.UseVisualStyleBackColor = True
         '
+        'ButtonEditJenisMobil
+        '
+        Me.ButtonEditJenisMobil.Location = New System.Drawing.Point(437, 433)
+        Me.ButtonEditJenisMobil.Name = "ButtonEditJenisMobil"
+        Me.ButtonEditJenisMobil.Size = New System.Drawing.Size(112, 69)
+        Me.ButtonEditJenisMobil.TabIndex = 3
+        Me.ButtonEditJenisMobil.Text = "Edit Jenis Mobil"
+        Me.ButtonEditJenisMobil.UseVisualStyleBackColor = True
+        '
         'JenisMobil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1112, 703)
+        Me.ClientSize = New System.Drawing.Size(986, 572)
+        Me.Controls.Add(Me.ButtonEditJenisMobil)
         Me.Controls.Add(Me.ButtonHapusJenisMobil)
-        Me.Controls.Add(Me.ButtonTambahJenisMoobil)
+        Me.Controls.Add(Me.ButtonTambahJenisMobil)
         Me.Controls.Add(Me.DataGridViewJenisMobil)
         Me.Name = "JenisMobil"
         Me.Text = "JenisMobil"
@@ -72,6 +83,7 @@ Partial Class JenisMobil
     End Sub
 
     Friend WithEvents DataGridViewJenisMobil As DataGridView
-    Friend WithEvents ButtonTambahJenisMoobil As Button
+    Friend WithEvents ButtonTambahJenisMobil As Button
     Friend WithEvents ButtonHapusJenisMobil As Button
+    Friend WithEvents ButtonEditJenisMobil As Button
 End Class
