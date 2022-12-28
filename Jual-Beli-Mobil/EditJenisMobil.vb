@@ -11,9 +11,9 @@
     Private Sub ButtonEditJenis_Click(sender As Object, e As EventArgs) Handles ButtonEditJenis.Click
         JenisMobil.datajenismobil.GSJenis = TextBoxEditJenis.Text.ToString()
 
-        JenisMobil.datajenismobil.UpdateDataJenisMobilDatabase(
-                                                               JenisMobil.selectedJenisID,
-                                                               JenisMobil.datajenismobil.GSJenis)
+        JenisMobil.datajenismobil.EditDataJenisMobilByIDDatabase(JenisMobil.selectedJenisID,
+                                                               JenisMobil.datajenismobil.GSJenis
+                                                               )
         Me.Close()
     End Sub
 End Class

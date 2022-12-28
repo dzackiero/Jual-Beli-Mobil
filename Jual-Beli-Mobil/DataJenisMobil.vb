@@ -1,5 +1,4 @@
-﻿Imports System.Text
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
 
 Public Class DataJenisMobil
     Private jenis As String
@@ -55,6 +54,7 @@ Public Class DataJenisMobil
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
             dbConn.Close()
+
             sqlRead.Close()
             dbConn.Close()
 
@@ -65,7 +65,7 @@ Public Class DataJenisMobil
         End Try
     End Function
 
-    Public Function GetDataKoleksiByIDDatabase(ID As Integer) As List(Of String)
+    Public Function GetDataJenisMobilByIDDatabase(ID As Integer) As List(Of String)
         Dim result As New List(Of String)
 
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database=" + database
@@ -86,6 +86,31 @@ Public Class DataJenisMobil
         sqlRead.Close()
         dbConn.Close()
         Return result
+    End Function
+
+    Public Function EditDataJenisMobilByIDDatabase(ID As Integer,
+                                                  jenis As String)
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database=" + database
+
+        'Try
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlQuery = "UPDATE jenis_mobil SET " &
+                        "jenis='" & jenis & "' " &
+                        "WHERE id_jenis='" & ID & "'"
+
+        sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+        sqlRead = sqlCommand.ExecuteReader
+
+        dbConn.Close()
+        sqlRead.Close()
+        dbConn.Close()
+
+        'Catch ex As Exception
+        'Return ex.Message
+        'Finally
+        dbConn.Dispose()
+        'End Try
     End Function
 
     Public Function DeleteDataJenisMobilDatabase(ID As Integer)
@@ -113,28 +138,4 @@ Public Class DataJenisMobil
         End Try
     End Function
 
-    Public Function UpdateDataJenisMobilDatabase(ID As Integer,
-                                                 jenis As String)
-        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database=" + database
-
-        Try
-            dbConn.Open()
-            sqlCommand.Connection = dbConn
-            sqlQuery = "UPDATE jenis_mobil SET" &
-                        "jenis='" & jenis & "', " &
-                        "WHERE id_jenis='" & ID & "'"
-
-            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
-            sqlRead = sqlCommand.ExecuteReader
-
-            dbConn.Close()
-            sqlRead.Close()
-            dbConn.Close()
-
-        Catch ex As Exception
-            Return ex.Message
-        Finally
-            dbConn.Dispose()
-        End Try
-    End Function
 End Class
