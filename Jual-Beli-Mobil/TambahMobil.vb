@@ -9,6 +9,7 @@
     End Sub
 
     Private Sub ButtonTambahMobil_Click(sender As Object, e As EventArgs) Handles ButtonTambahMobil.Click
-        Mobil.dataMobil.gs
+        Mobil.dataMobil.GSTipeMobil = TextBoxTipeMobil.Text
+        Mobil.dataMobil.GSJenisMobil = TextBox.
     End Sub
 End Class
