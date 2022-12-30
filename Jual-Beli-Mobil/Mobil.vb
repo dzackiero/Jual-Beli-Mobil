@@ -12,10 +12,11 @@
     End Sub
 
     Public Sub ReloadDataTableDatabase()
-        DataGridViewMobil.DataSource = dataMobil.GetDataKoleksiDatabase()
+        DataGridViewMobil.DataSource = dataMobil.GetDataMobilDatabase()
     End Sub
 
     Private Sub ButtonTambahMobil_Click(sender As Object, e As EventArgs) Handles ButtonTambahMobil.Click
-
+        Dim tambahMobil = New TambahMobil()
+        tambahMobil.Show()
     End Sub
 End Class

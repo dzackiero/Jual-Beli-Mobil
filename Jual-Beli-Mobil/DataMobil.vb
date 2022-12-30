@@ -20,7 +20,7 @@ Public Class DataMobil
     Private password As String = ""
     Private database As String = "jualbelimobil"
 
-    Public Function GetDataKoleksiDatabase() As DataTable
+    Public Function GetDataMobilDatabase() As DataTable
         Dim result As New DataTable
 
         dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password= " + password + ";" + "database=" + database
@@ -46,6 +46,43 @@ Public Class DataMobil
         sqlRead.Close()
         dbConn.Close()
         Return result
+    End Function
+
+    Public Function AddDataMobilDatabase(
+                                         tipe_mobil As String,
+                                         jenis_mobil As Integer,
+                                         harga As Integer,
+                                         harga_dasar As Integer,
+                                         tahun_pembuatan As Integer,
+                                         kondisi As String,
+                                         garansi As String
+                                        )
+        Dim result As New DataTable
+
+        dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password= " + password + ";" + "database=" + database
+        'Try
+        dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "INSERT INTO mobil(id_jenis_mobil, tipe_mobil, tahun_pembuatan, kondisi, harga, garansi, status_terjual, harga_default)
+                         VALUE('" _
+                        & tipe_mobil & "', '" _
+                        & jenis_mobil & "', '" _
+                        & harga & "', '" _
+                        & harga_dasar & "', '" _
+                        & tahun_pembuatan & "', '" _
+                        & kondisi & "', '" _
+                        & garansi & "')"
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+
+            sqlRead.Close()
+            dbConn.Close()
+        'Catch ex As Exception
+        'Return ex.Message
+        'Finally
+        dbConn.Dispose()
+        'End Try
     End Function
 
     Public Property GSIdMobil As Integer
@@ -102,7 +139,7 @@ Public Class DataMobil
         End Set
     End Property
 
-    Public Property GSGarasi As Integer
+    Public Property GSGaransi As Integer
         Get
             Return garansi
         End Get

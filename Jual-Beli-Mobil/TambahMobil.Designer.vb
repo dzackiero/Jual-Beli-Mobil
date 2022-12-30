@@ -36,6 +36,8 @@ Partial Class TambahMobil
         Me.LabelJenisMobil = New System.Windows.Forms.Label()
         Me.ButtonTambahMobil = New System.Windows.Forms.Button()
         Me.LabelTitle = New System.Windows.Forms.Label()
+        Me.TextBoxHargaDefault = New System.Windows.Forms.TextBox()
+        Me.LabelHargaDefault = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LabelTipeMobil
@@ -60,19 +62,19 @@ Partial Class TambahMobil
         Me.ComboBoxJenisMobil.Location = New System.Drawing.Point(161, 102)
         Me.ComboBoxJenisMobil.Name = "ComboBoxJenisMobil"
         Me.ComboBoxJenisMobil.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBoxJenisMobil.TabIndex = 3
+        Me.ComboBoxJenisMobil.TabIndex = 2
         '
         'TextBoxTahunPembuatan
         '
-        Me.TextBoxTahunPembuatan.Location = New System.Drawing.Point(161, 179)
+        Me.TextBoxTahunPembuatan.Location = New System.Drawing.Point(161, 217)
         Me.TextBoxTahunPembuatan.Name = "TextBoxTahunPembuatan"
         Me.TextBoxTahunPembuatan.Size = New System.Drawing.Size(151, 27)
-        Me.TextBoxTahunPembuatan.TabIndex = 9
+        Me.TextBoxTahunPembuatan.TabIndex = 5
         '
         'LabelTahunPembuatan
         '
         Me.LabelTahunPembuatan.AutoSize = True
-        Me.LabelTahunPembuatan.Location = New System.Drawing.Point(12, 182)
+        Me.LabelTahunPembuatan.Location = New System.Drawing.Point(12, 220)
         Me.LabelTahunPembuatan.Name = "LabelTahunPembuatan"
         Me.LabelTahunPembuatan.Size = New System.Drawing.Size(117, 20)
         Me.LabelTahunPembuatan.TabIndex = 8
@@ -80,15 +82,15 @@ Partial Class TambahMobil
         '
         'TextBoxKondisi
         '
-        Me.TextBoxKondisi.Location = New System.Drawing.Point(161, 218)
+        Me.TextBoxKondisi.Location = New System.Drawing.Point(161, 256)
         Me.TextBoxKondisi.Name = "TextBoxKondisi"
         Me.TextBoxKondisi.Size = New System.Drawing.Size(151, 27)
-        Me.TextBoxKondisi.TabIndex = 11
+        Me.TextBoxKondisi.TabIndex = 6
         '
         'LabelKondisi
         '
         Me.LabelKondisi.AutoSize = True
-        Me.LabelKondisi.Location = New System.Drawing.Point(12, 221)
+        Me.LabelKondisi.Location = New System.Drawing.Point(12, 259)
         Me.LabelKondisi.Name = "LabelKondisi"
         Me.LabelKondisi.Size = New System.Drawing.Size(58, 20)
         Me.LabelKondisi.TabIndex = 10
@@ -99,7 +101,7 @@ Partial Class TambahMobil
         Me.TextBoxHarga.Location = New System.Drawing.Point(161, 141)
         Me.TextBoxHarga.Name = "TextBoxHarga"
         Me.TextBoxHarga.Size = New System.Drawing.Size(151, 27)
-        Me.TextBoxHarga.TabIndex = 13
+        Me.TextBoxHarga.TabIndex = 3
         '
         'LabelHarga
         '
@@ -112,15 +114,15 @@ Partial Class TambahMobil
         '
         'TextBoxGaransi
         '
-        Me.TextBoxGaransi.Location = New System.Drawing.Point(161, 256)
+        Me.TextBoxGaransi.Location = New System.Drawing.Point(161, 294)
         Me.TextBoxGaransi.Name = "TextBoxGaransi"
         Me.TextBoxGaransi.Size = New System.Drawing.Size(151, 27)
-        Me.TextBoxGaransi.TabIndex = 15
+        Me.TextBoxGaransi.TabIndex = 7
         '
         'LabelGaransi
         '
         Me.LabelGaransi.AutoSize = True
-        Me.LabelGaransi.Location = New System.Drawing.Point(12, 259)
+        Me.LabelGaransi.Location = New System.Drawing.Point(12, 297)
         Me.LabelGaransi.Name = "LabelGaransi"
         Me.LabelGaransi.Size = New System.Drawing.Size(58, 20)
         Me.LabelGaransi.TabIndex = 14
@@ -137,10 +139,10 @@ Partial Class TambahMobil
         '
         'ButtonTambahMobil
         '
-        Me.ButtonTambahMobil.Location = New System.Drawing.Point(218, 303)
+        Me.ButtonTambahMobil.Location = New System.Drawing.Point(218, 341)
         Me.ButtonTambahMobil.Name = "ButtonTambahMobil"
         Me.ButtonTambahMobil.Size = New System.Drawing.Size(94, 29)
-        Me.ButtonTambahMobil.TabIndex = 17
+        Me.ButtonTambahMobil.TabIndex = 8
         Me.ButtonTambahMobil.Text = "Tambah"
         Me.ButtonTambahMobil.UseVisualStyleBackColor = True
         '
@@ -154,11 +156,29 @@ Partial Class TambahMobil
         Me.LabelTitle.TabIndex = 18
         Me.LabelTitle.Text = "Tambah Mobil"
         '
+        'TextBoxHargaDefault
+        '
+        Me.TextBoxHargaDefault.Location = New System.Drawing.Point(161, 179)
+        Me.TextBoxHargaDefault.Name = "TextBoxHargaDefault"
+        Me.TextBoxHargaDefault.Size = New System.Drawing.Size(151, 27)
+        Me.TextBoxHargaDefault.TabIndex = 4
+        '
+        'LabelHargaDefault
+        '
+        Me.LabelHargaDefault.AutoSize = True
+        Me.LabelHargaDefault.Location = New System.Drawing.Point(12, 182)
+        Me.LabelHargaDefault.Name = "LabelHargaDefault"
+        Me.LabelHargaDefault.Size = New System.Drawing.Size(92, 20)
+        Me.LabelHargaDefault.TabIndex = 19
+        Me.LabelHargaDefault.Text = "Harga Dasar"
+        '
         'TambahMobil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(333, 361)
+        Me.ClientSize = New System.Drawing.Size(335, 409)
+        Me.Controls.Add(Me.TextBoxHargaDefault)
+        Me.Controls.Add(Me.LabelHargaDefault)
         Me.Controls.Add(Me.LabelTitle)
         Me.Controls.Add(Me.ButtonTambahMobil)
         Me.Controls.Add(Me.LabelJenisMobil)
@@ -174,7 +194,7 @@ Partial Class TambahMobil
         Me.Controls.Add(Me.TextBoxTipeMobil)
         Me.Controls.Add(Me.LabelTipeMobil)
         Me.Name = "TambahMobil"
-        Me.Text = "TambahMobil"
+        Me.Text = "Tambah Mobil"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -194,4 +214,6 @@ Partial Class TambahMobil
     Friend WithEvents LabelJenisMobil As Label
     Friend WithEvents ButtonTambahMobil As Button
     Friend WithEvents LabelTitle As Label
+    Friend WithEvents TextBoxHargaDefault As TextBox
+    Friend WithEvents LabelHargaDefault As Label
 End Class
