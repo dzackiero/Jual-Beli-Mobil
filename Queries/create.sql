@@ -25,7 +25,7 @@ create table mobil(
     kondisi varchar(30),
     harga int,
     garansi int,/*bulan*/
-    status_terjual varchar(30),
+    status_terjual tinyint,
     harga_default int
 );
 create table pembeli(
