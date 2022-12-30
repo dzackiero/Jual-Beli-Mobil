@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>Jual_Beli_Mobil</RootNamespace>
-    <StartupObject>Jual_Beli_Mobil.My.MyApplication</StartupObject>
+    <StartupObject>Jual_Beli_Mobil.JenisMobil</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
@@ -13,6 +13,10 @@
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
   </ItemGroup>
 
   <ItemGroup>
