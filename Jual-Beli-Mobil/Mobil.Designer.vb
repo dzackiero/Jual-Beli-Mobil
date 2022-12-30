@@ -27,14 +27,17 @@ Partial Class Mobil
         Me.ButtonTambahMobil = New System.Windows.Forms.Button()
         Me.ButtonEditMobil = New System.Windows.Forms.Button()
         Me.ButtonHapusMobil = New System.Windows.Forms.Button()
+        Me.ButtonJenisMobil = New System.Windows.Forms.Button()
         CType(Me.DataGridViewMobil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridViewMobil
         '
+        Me.DataGridViewMobil.AllowUserToDeleteRows = False
         Me.DataGridViewMobil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewMobil.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridViewMobil.Location = New System.Drawing.Point(12, 54)
         Me.DataGridViewMobil.Name = "DataGridViewMobil"
+        Me.DataGridViewMobil.ReadOnly = True
         Me.DataGridViewMobil.RowHeadersWidth = 51
         Me.DataGridViewMobil.RowTemplate.Height = 29
         Me.DataGridViewMobil.Size = New System.Drawing.Size(776, 260)
@@ -44,7 +47,7 @@ Partial Class Mobil
         '
         Me.LabelMobil.AutoSize = True
         Me.LabelMobil.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LabelMobil.Location = New System.Drawing.Point(12, 275)
+        Me.LabelMobil.Location = New System.Drawing.Point(12, 13)
         Me.LabelMobil.Name = "LabelMobil"
         Me.LabelMobil.Size = New System.Drawing.Size(88, 38)
         Me.LabelMobil.TabIndex = 1
@@ -52,7 +55,7 @@ Partial Class Mobil
         '
         'ButtonTambahMobil
         '
-        Me.ButtonTambahMobil.Location = New System.Drawing.Point(494, 285)
+        Me.ButtonTambahMobil.Location = New System.Drawing.Point(494, 19)
         Me.ButtonTambahMobil.Name = "ButtonTambahMobil"
         Me.ButtonTambahMobil.Size = New System.Drawing.Size(94, 29)
         Me.ButtonTambahMobil.TabIndex = 2
@@ -61,7 +64,7 @@ Partial Class Mobil
         '
         'ButtonEditMobil
         '
-        Me.ButtonEditMobil.Location = New System.Drawing.Point(594, 285)
+        Me.ButtonEditMobil.Location = New System.Drawing.Point(694, 19)
         Me.ButtonEditMobil.Name = "ButtonEditMobil"
         Me.ButtonEditMobil.Size = New System.Drawing.Size(94, 29)
         Me.ButtonEditMobil.TabIndex = 3
@@ -70,18 +73,28 @@ Partial Class Mobil
         '
         'ButtonHapusMobil
         '
-        Me.ButtonHapusMobil.Location = New System.Drawing.Point(694, 285)
+        Me.ButtonHapusMobil.Location = New System.Drawing.Point(594, 18)
         Me.ButtonHapusMobil.Name = "ButtonHapusMobil"
         Me.ButtonHapusMobil.Size = New System.Drawing.Size(94, 29)
         Me.ButtonHapusMobil.TabIndex = 4
         Me.ButtonHapusMobil.Text = "Hapus"
         Me.ButtonHapusMobil.UseVisualStyleBackColor = True
         '
+        'ButtonJenisMobil
+        '
+        Me.ButtonJenisMobil.Location = New System.Drawing.Point(106, 19)
+        Me.ButtonJenisMobil.Name = "ButtonJenisMobil"
+        Me.ButtonJenisMobil.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonJenisMobil.TabIndex = 5
+        Me.ButtonJenisMobil.Text = "Jenis Mobil"
+        Me.ButtonJenisMobil.UseVisualStyleBackColor = True
+        '
         'Mobil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 326)
+        Me.Controls.Add(Me.ButtonJenisMobil)
         Me.Controls.Add(Me.ButtonHapusMobil)
         Me.Controls.Add(Me.ButtonEditMobil)
         Me.Controls.Add(Me.ButtonTambahMobil)
@@ -100,4 +113,5 @@ Partial Class Mobil
     Friend WithEvents ButtonTambahMobil As Button
     Friend WithEvents ButtonEditMobil As Button
     Friend WithEvents ButtonHapusMobil As Button
+    Friend WithEvents ButtonJenisMobil As Button
 End Class

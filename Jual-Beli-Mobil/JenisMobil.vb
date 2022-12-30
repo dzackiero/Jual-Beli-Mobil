@@ -9,7 +9,8 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        datajenismobil = New DataJenisMobil()
+        'datajenismobil = New DataJenisMobil()
+        datajenismobil = Mobil.dataJenisMobil
         ReloadDataJenisMobilDatabase()
     End Sub
 

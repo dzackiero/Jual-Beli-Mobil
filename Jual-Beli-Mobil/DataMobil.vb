@@ -29,13 +29,13 @@ Public Class DataMobil
         sqlCommand.Connection = dbConn
         sqlCommand.CommandText = "SELECT 
                                 id_mobil AS 'ID', 
-                                id_jenis_mobil AS 'Jenis Mobil'
-                                tipe_mobil AS 'TIPE Mobil',
+                                id_jenis_mobil AS 'Jenis Mobil',
+                                tipe_mobil AS 'Tipe Mobil',
                                 tahun_pembuatan AS 'Tahun Pembuatan',
                                 kondisi AS 'Kondisi',
                                 harga AS 'Harga',
                                 garansi AS 'Garansi',
-                                status_penjualan AS 'Status'
+                                status_terjual AS 'Status',
                                 harga_default AS 'Base Price'
                                 FROM mobil
                                 "
@@ -60,31 +60,121 @@ Public Class DataMobil
         Dim result As New DataTable
 
         dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password= " + password + ";" + "database=" + database
-        'Try
-        dbConn.Open()
+        Try
+            dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "INSERT INTO mobil(id_jenis_mobil, tipe_mobil, tahun_pembuatan, kondisi, harga, garansi, status_terjual, harga_default)
+            sqlQuery = "INSERT INTO mobil(tipe_mobil, id_jenis_mobil, tahun_pembuatan, kondisi, harga, harga_default, status_terjual, garansi)
                          VALUE('" _
-                        & tipe_mobil & "', '" _
-                        & jenis_mobil & "', '" _
-                        & harga & "', '" _
-                        & harga_dasar & "', '" _
-                        & tahun_pembuatan & "', '" _
-                        & kondisi & "', '" _
-                        & garansi & "')"
+                                & tipe_mobil & "', '" _
+                                & jenis_mobil & "', '" _
+                                & harga & "', '" _
+                                & harga_dasar & "', '" _
+                                & tahun_pembuatan & "', '" _
+                                & kondisi & "', '" _
+                                & False & "', '" _
+                                & garansi & "')"
 
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
 
             sqlRead.Close()
             dbConn.Close()
-        'Catch ex As Exception
-        'Return ex.Message
-        'Finally
-        dbConn.Dispose()
-        'End Try
+        Catch ex As Exception
+            Return ex.Message
+        Finally
+            dbConn.Dispose()
+        End Try
     End Function
 
+    Public Function GetDataMobilByIDDatabase(ID As Integer) As List(Of String)
+        Dim result As New List(Of String)
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database=" + database
+        dbConn.Open()
+
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "SELECT tipe_mobil, id_jenis_mobil, tahun_pembuatan, kondisi, harga, garansi, harga_default
+                            FROM mobil
+                            WHERE id_mobil ='" & ID & "'"
+        sqlRead = sqlCommand.ExecuteReader
+
+        While sqlRead.Read
+            result.Add(sqlRead.GetString(0).ToString())
+            result.Add(sqlRead.GetString(1).ToString())
+            result.Add(sqlRead.GetString(2).ToString())
+            result.Add(sqlRead.GetString(3).ToString())
+            result.Add(sqlRead.GetString(4).ToString())
+            result.Add(sqlRead.GetString(5).ToString())
+            result.Add(sqlRead.GetString(6).ToString())
+        End While
+
+        sqlRead.Close()
+        dbConn.Close()
+        Return result
+    End Function
+
+    Public Function EditDataMobilByIDDatabase(
+                                         id_mobil As Integer,
+                                         tipe_mobil As String,
+                                         jenis_mobil As Integer,
+                                         harga As Integer,
+                                         harga_dasar As Integer,
+                                         tahun_pembuatan As Integer,
+                                         kondisi As String,
+                                         garansi As String
+                                        )
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database=" + database
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "UPDATE mobil SET " &
+                            "id_jenis_mobil='" & jenis_mobil & "'," &
+                            "tipe_mobil='" & tipe_mobil & "', " &
+                            "harga='" & harga & "', " &
+                            "harga_default='" & harga_dasar & "', " &
+                            "tahun_pembuatan='" & tahun_pembuatan & "', " &
+                            "kondisi='" & kondisi & "', " &
+                            "garansi='" & garansi & "' " &
+                            "WHERE id_mobil=" & id_mobil & ""
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+
+            dbConn.Close()
+            sqlRead.Close()
+            dbConn.Close()
+
+        Catch ex As Exception
+            Return ex.Message
+        Finally
+            dbConn.Dispose()
+        End Try
+    End Function
+
+    Public Function DeleteDataMobilDatabase(ID As Integer)
+
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database =" + database
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "DELETE FROM mobil " &
+                        "WHERE id_mobil='" & ID & "'"
+
+            Debug.WriteLine(sqlQuery)
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+            dbConn.Close()
+
+        Catch ex As Exception
+            Return ex.Message
+        Finally
+            dbConn.Dispose()
+        End Try
+    End Function
     Public Property GSIdMobil As Integer
         Get
             Return id_mobil
