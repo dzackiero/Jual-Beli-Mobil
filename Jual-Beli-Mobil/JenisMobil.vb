@@ -27,25 +27,36 @@
     End Sub
 
     Private Sub DataGridViewJenisMobil_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewJenisMobil.CellClick
-        Dim index As Integer = e.RowIndex
-        Dim selectedRow As DataGridViewRow
-        selectedRow = DataGridViewJenisMobil.Rows(index)
+        Try
+            Dim index As Integer = e.RowIndex
+            Dim selectedRow As DataGridViewRow
+            selectedRow = DataGridViewJenisMobil.Rows(index)
 
-        selectedJenisID = selectedRow.Cells(0).Value
-        selectedJenisNamaMobil = selectedRow.Cells(1).Value
+            selectedJenisID = selectedRow.Cells(0).Value
+            selectedJenisNamaMobil = selectedRow.Cells(1).Value
+        Catch ex As Exception
+            MessageBox.Show("Tidak Ada Data Disini")
+        End Try
     End Sub
 
     Private Sub ButtonEditJenisMobil_Click(sender As Object, e As EventArgs) Handles ButtonEditJenisMobil.Click
         Dim selectedjenismobil As List(Of String) = datajenismobil.GetDataJenisMobilByIDDatabase(selectedJenisID)
+        Try
+            datajenismobil.GSJenis = selectedjenismobil(1)
 
-        datajenismobil.GSJenis = selectedjenismobil(1)
-
-        Dim editjenismobil = New EditJenisMobil()
-        editjenismobil.Show()
+            Dim editjenismobil = New EditJenisMobil()
+            editjenismobil.Show()
+        Catch ex As Exception
+            MessageBox.Show("Harus Memilih Jenis Mobil")
+        End Try
     End Sub
 
     Private Sub ButtonHapusJenisMobil_Click(sender As Object, e As EventArgs) Handles ButtonHapusJenisMobil.Click
-        Dim hapusjenismobil = New HapusJenisMobil()
-        hapusjenismobil.Show()
+        Try
+            Dim hapusjenismobil = New HapusJenisMobil()
+            hapusjenismobil.Show()
+        Catch ex As Exception
+            MessageBox.Show("Harus Memilih Jenis Mobil")
+        End Try
     End Sub
 End Class
