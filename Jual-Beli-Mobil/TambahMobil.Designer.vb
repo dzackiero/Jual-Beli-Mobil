@@ -34,7 +34,7 @@ Partial Class TambahMobil
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonTambahMobil = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -135,14 +135,14 @@ Partial Class TambahMobil
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Jenis Mobil"
         '
-        'Button1
+        'ButtonTambahMobil
         '
-        Me.Button1.Location = New System.Drawing.Point(218, 303)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "Tambah"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonTambahMobil.Location = New System.Drawing.Point(218, 303)
+        Me.ButtonTambahMobil.Name = "ButtonTambahMobil"
+        Me.ButtonTambahMobil.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonTambahMobil.TabIndex = 17
+        Me.ButtonTambahMobil.Text = "Tambah"
+        Me.ButtonTambahMobil.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -160,7 +160,7 @@ Partial Class TambahMobil
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(338, 344)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonTambahMobil)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label5)
@@ -192,6 +192,6 @@ Partial Class TambahMobil
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonTambahMobil As Button
     Friend WithEvents Label7 As Label
 End Class

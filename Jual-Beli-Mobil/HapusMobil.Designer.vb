@@ -24,8 +24,8 @@ Partial Class HapusMobil
     Private Sub InitializeComponent()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonHapusMobil = New System.Windows.Forms.Button()
+        Me.ButtonBatalHapus = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label7
@@ -48,31 +48,31 @@ Partial Class HapusMobil
         Me.Label1.TabIndex = 34
         Me.Label1.Text = "..."
         '
-        'Button1
+        'ButtonHapusMobil
         '
-        Me.Button1.Location = New System.Drawing.Point(23, 105)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 35
-        Me.Button1.Text = "Hapus"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonHapusMobil.Location = New System.Drawing.Point(23, 105)
+        Me.ButtonHapusMobil.Name = "ButtonHapusMobil"
+        Me.ButtonHapusMobil.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonHapusMobil.TabIndex = 35
+        Me.ButtonHapusMobil.Text = "Hapus"
+        Me.ButtonHapusMobil.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonBatalHapus
         '
-        Me.Button2.Location = New System.Drawing.Point(123, 105)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 36
-        Me.Button2.Text = "Batal"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonBatalHapus.Location = New System.Drawing.Point(123, 105)
+        Me.ButtonBatalHapus.Name = "ButtonBatalHapus"
+        Me.ButtonBatalHapus.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonBatalHapus.TabIndex = 36
+        Me.ButtonBatalHapus.Text = "Batal"
+        Me.ButtonBatalHapus.UseVisualStyleBackColor = True
         '
         'HapusMobil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(254, 151)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonBatalHapus)
+        Me.Controls.Add(Me.ButtonHapusMobil)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label7)
         Me.Name = "HapusMobil"
@@ -84,6 +84,6 @@ Partial Class HapusMobil
 
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonHapusMobil As Button
+    Friend WithEvents ButtonBatalHapus As Button
 End Class

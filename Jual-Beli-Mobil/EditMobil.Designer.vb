@@ -23,7 +23,7 @@ Partial Class EditMobil
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonEditMobil = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -48,14 +48,14 @@ Partial Class EditMobil
         Me.Label7.TabIndex = 32
         Me.Label7.Text = "Edit Mobil"
         '
-        'Button1
+        'ButtonEditMobil
         '
-        Me.Button1.Location = New System.Drawing.Point(217, 303)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Edit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonEditMobil.Location = New System.Drawing.Point(217, 303)
+        Me.ButtonEditMobil.Name = "ButtonEditMobil"
+        Me.ButtonEditMobil.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonEditMobil.TabIndex = 31
+        Me.ButtonEditMobil.Text = "Edit"
+        Me.ButtonEditMobil.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -160,7 +160,7 @@ Partial Class EditMobil
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(329, 354)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonEditMobil)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label5)
@@ -181,7 +181,7 @@ Partial Class EditMobil
     End Sub
 
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonEditMobil As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label5 As Label
