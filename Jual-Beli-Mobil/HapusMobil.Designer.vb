@@ -22,59 +22,59 @@ Partial Class HapusMobil
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ButtonHapusMobil = New System.Windows.Forms.Button()
-        Me.ButtonBatalHapus = New System.Windows.Forms.Button()
+        Me.LabelTitle = New System.Windows.Forms.Label()
+        Me.LabelNama = New System.Windows.Forms.Label()
+        Me.ButtonHapus = New System.Windows.Forms.Button()
+        Me.ButtonBatal = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label7
+        'LabelTitle
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(32, 17)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(192, 38)
-        Me.Label7.TabIndex = 33
-        Me.Label7.Text = "Hapus Mobil?"
+        Me.LabelTitle.AutoSize = True
+        Me.LabelTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelTitle.Location = New System.Drawing.Point(32, 17)
+        Me.LabelTitle.Name = "LabelTitle"
+        Me.LabelTitle.Size = New System.Drawing.Size(192, 38)
+        Me.LabelTitle.TabIndex = 33
+        Me.LabelTitle.Text = "Hapus Mobil?"
         '
-        'Label1
+        'LabelNama
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(105, 61)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 38)
-        Me.Label1.TabIndex = 34
-        Me.Label1.Text = "..."
+        Me.LabelNama.AutoSize = True
+        Me.LabelNama.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelNama.Location = New System.Drawing.Point(107, 70)
+        Me.LabelNama.Name = "LabelNama"
+        Me.LabelNama.Size = New System.Drawing.Size(38, 38)
+        Me.LabelNama.TabIndex = 34
+        Me.LabelNama.Text = "..."
         '
-        'ButtonHapusMobil
+        'ButtonHapus
         '
-        Me.ButtonHapusMobil.Location = New System.Drawing.Point(23, 105)
-        Me.ButtonHapusMobil.Name = "ButtonHapusMobil"
-        Me.ButtonHapusMobil.Size = New System.Drawing.Size(94, 29)
-        Me.ButtonHapusMobil.TabIndex = 35
-        Me.ButtonHapusMobil.Text = "Hapus"
-        Me.ButtonHapusMobil.UseVisualStyleBackColor = True
+        Me.ButtonHapus.Location = New System.Drawing.Point(32, 132)
+        Me.ButtonHapus.Name = "ButtonHapus"
+        Me.ButtonHapus.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonHapus.TabIndex = 35
+        Me.ButtonHapus.Text = "Hapus"
+        Me.ButtonHapus.UseVisualStyleBackColor = True
         '
-        'ButtonBatalHapus
+        'ButtonBatal
         '
-        Me.ButtonBatalHapus.Location = New System.Drawing.Point(123, 105)
-        Me.ButtonBatalHapus.Name = "ButtonBatalHapus"
-        Me.ButtonBatalHapus.Size = New System.Drawing.Size(94, 29)
-        Me.ButtonBatalHapus.TabIndex = 36
-        Me.ButtonBatalHapus.Text = "Batal"
-        Me.ButtonBatalHapus.UseVisualStyleBackColor = True
+        Me.ButtonBatal.Location = New System.Drawing.Point(132, 132)
+        Me.ButtonBatal.Name = "ButtonBatal"
+        Me.ButtonBatal.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonBatal.TabIndex = 36
+        Me.ButtonBatal.Text = "Batal"
+        Me.ButtonBatal.UseVisualStyleBackColor = True
         '
         'HapusMobil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(254, 151)
-        Me.Controls.Add(Me.ButtonBatalHapus)
-        Me.Controls.Add(Me.ButtonHapusMobil)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label7)
+        Me.ClientSize = New System.Drawing.Size(254, 173)
+        Me.Controls.Add(Me.ButtonBatal)
+        Me.Controls.Add(Me.ButtonHapus)
+        Me.Controls.Add(Me.LabelNama)
+        Me.Controls.Add(Me.LabelTitle)
         Me.Name = "HapusMobil"
         Me.Text = "HapusMobil"
         Me.ResumeLayout(False)
@@ -82,8 +82,8 @@ Partial Class HapusMobil
 
     End Sub
 
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents ButtonHapusMobil As Button
-    Friend WithEvents ButtonBatalHapus As Button
+    Friend WithEvents LabelTitle As Label
+    Friend WithEvents LabelNama As Label
+    Friend WithEvents ButtonHapus As Button
+    Friend WithEvents ButtonBatal As Button
 End Class

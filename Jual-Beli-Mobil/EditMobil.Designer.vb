@@ -22,157 +22,177 @@ Partial Class EditMobil
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBoxHargaDefault = New System.Windows.Forms.TextBox()
+        Me.LabelHargaDefault = New System.Windows.Forms.Label()
+        Me.LabelTitle = New System.Windows.Forms.Label()
         Me.ButtonEditMobil = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LabelJenisMobil = New System.Windows.Forms.Label()
+        Me.TextBoxGaransi = New System.Windows.Forms.TextBox()
+        Me.LabelGaransi = New System.Windows.Forms.Label()
+        Me.TextBoxHarga = New System.Windows.Forms.TextBox()
+        Me.LabelHarga = New System.Windows.Forms.Label()
+        Me.TextBoxKondisi = New System.Windows.Forms.TextBox()
+        Me.LabelKondisi = New System.Windows.Forms.Label()
+        Me.TextBoxTahunPembuatan = New System.Windows.Forms.TextBox()
+        Me.LabelTahunPembuatan = New System.Windows.Forms.Label()
+        Me.ComboBoxJenisMobil = New System.Windows.Forms.ComboBox()
+        Me.TextBoxTipeMobil = New System.Windows.Forms.TextBox()
+        Me.LabelTipeMobil = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label7
+        'TextBoxHargaDefault
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(3, 9)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(148, 38)
-        Me.Label7.TabIndex = 32
-        Me.Label7.Text = "Edit Mobil"
+        Me.TextBoxHargaDefault.Location = New System.Drawing.Point(158, 179)
+        Me.TextBoxHargaDefault.Name = "TextBoxHargaDefault"
+        Me.TextBoxHargaDefault.Size = New System.Drawing.Size(151, 27)
+        Me.TextBoxHargaDefault.TabIndex = 24
+        '
+        'LabelHargaDefault
+        '
+        Me.LabelHargaDefault.AutoSize = True
+        Me.LabelHargaDefault.Location = New System.Drawing.Point(9, 182)
+        Me.LabelHargaDefault.Name = "LabelHargaDefault"
+        Me.LabelHargaDefault.Size = New System.Drawing.Size(92, 20)
+        Me.LabelHargaDefault.TabIndex = 35
+        Me.LabelHargaDefault.Text = "Harga Dasar"
+        '
+        'LabelTitle
+        '
+        Me.LabelTitle.AutoSize = True
+        Me.LabelTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelTitle.Location = New System.Drawing.Point(1, 9)
+        Me.LabelTitle.Name = "LabelTitle"
+        Me.LabelTitle.Size = New System.Drawing.Size(148, 38)
+        Me.LabelTitle.TabIndex = 34
+        Me.LabelTitle.Text = "Edit Mobil"
         '
         'ButtonEditMobil
         '
-        Me.ButtonEditMobil.Location = New System.Drawing.Point(217, 303)
+        Me.ButtonEditMobil.Location = New System.Drawing.Point(215, 341)
         Me.ButtonEditMobil.Name = "ButtonEditMobil"
         Me.ButtonEditMobil.Size = New System.Drawing.Size(94, 29)
-        Me.ButtonEditMobil.TabIndex = 31
+        Me.ButtonEditMobil.TabIndex = 28
         Me.ButtonEditMobil.Text = "Edit"
         Me.ButtonEditMobil.UseVisualStyleBackColor = True
         '
-        'Label6
+        'LabelJenisMobil
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(11, 105)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 20)
-        Me.Label6.TabIndex = 30
-        Me.Label6.Text = "Jenis Mobil"
+        Me.LabelJenisMobil.AutoSize = True
+        Me.LabelJenisMobil.Location = New System.Drawing.Point(10, 105)
+        Me.LabelJenisMobil.Name = "LabelJenisMobil"
+        Me.LabelJenisMobil.Size = New System.Drawing.Size(83, 20)
+        Me.LabelJenisMobil.TabIndex = 33
+        Me.LabelJenisMobil.Text = "Jenis Mobil"
         '
-        'TextBox9
+        'TextBoxGaransi
         '
-        Me.TextBox9.Location = New System.Drawing.Point(160, 256)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox9.TabIndex = 29
+        Me.TextBoxGaransi.Location = New System.Drawing.Point(158, 294)
+        Me.TextBoxGaransi.Name = "TextBoxGaransi"
+        Me.TextBoxGaransi.Size = New System.Drawing.Size(151, 27)
+        Me.TextBoxGaransi.TabIndex = 27
         '
-        'Label5
+        'LabelGaransi
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(11, 259)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 20)
-        Me.Label5.TabIndex = 28
-        Me.Label5.Text = "Garansi"
+        Me.LabelGaransi.AutoSize = True
+        Me.LabelGaransi.Location = New System.Drawing.Point(9, 297)
+        Me.LabelGaransi.Name = "LabelGaransi"
+        Me.LabelGaransi.Size = New System.Drawing.Size(58, 20)
+        Me.LabelGaransi.TabIndex = 32
+        Me.LabelGaransi.Text = "Garansi"
         '
-        'TextBox8
+        'TextBoxHarga
         '
-        Me.TextBox8.Location = New System.Drawing.Point(160, 141)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox8.TabIndex = 27
+        Me.TextBoxHarga.Location = New System.Drawing.Point(158, 141)
+        Me.TextBoxHarga.Name = "TextBoxHarga"
+        Me.TextBoxHarga.Size = New System.Drawing.Size(151, 27)
+        Me.TextBoxHarga.TabIndex = 23
         '
-        'Label4
+        'LabelHarga
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 144)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(50, 20)
-        Me.Label4.TabIndex = 26
-        Me.Label4.Text = "Harga"
+        Me.LabelHarga.AutoSize = True
+        Me.LabelHarga.Location = New System.Drawing.Point(9, 144)
+        Me.LabelHarga.Name = "LabelHarga"
+        Me.LabelHarga.Size = New System.Drawing.Size(50, 20)
+        Me.LabelHarga.TabIndex = 31
+        Me.LabelHarga.Text = "Harga"
         '
-        'TextBox7
+        'TextBoxKondisi
         '
-        Me.TextBox7.Location = New System.Drawing.Point(160, 218)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox7.TabIndex = 25
+        Me.TextBoxKondisi.Location = New System.Drawing.Point(158, 256)
+        Me.TextBoxKondisi.Name = "TextBoxKondisi"
+        Me.TextBoxKondisi.Size = New System.Drawing.Size(151, 27)
+        Me.TextBoxKondisi.TabIndex = 26
         '
-        'Label3
+        'LabelKondisi
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 221)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 20)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Kondisi"
+        Me.LabelKondisi.AutoSize = True
+        Me.LabelKondisi.Location = New System.Drawing.Point(9, 259)
+        Me.LabelKondisi.Name = "LabelKondisi"
+        Me.LabelKondisi.Size = New System.Drawing.Size(58, 20)
+        Me.LabelKondisi.TabIndex = 30
+        Me.LabelKondisi.Text = "Kondisi"
         '
-        'TextBox6
+        'TextBoxTahunPembuatan
         '
-        Me.TextBox6.Location = New System.Drawing.Point(160, 179)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox6.TabIndex = 23
+        Me.TextBoxTahunPembuatan.Location = New System.Drawing.Point(158, 217)
+        Me.TextBoxTahunPembuatan.Name = "TextBoxTahunPembuatan"
+        Me.TextBoxTahunPembuatan.Size = New System.Drawing.Size(151, 27)
+        Me.TextBoxTahunPembuatan.TabIndex = 25
         '
-        'Label2
+        'LabelTahunPembuatan
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 182)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(117, 20)
-        Me.Label2.TabIndex = 22
-        Me.Label2.Text = "Tahun Perbuatan"
+        Me.LabelTahunPembuatan.AutoSize = True
+        Me.LabelTahunPembuatan.Location = New System.Drawing.Point(9, 220)
+        Me.LabelTahunPembuatan.Name = "LabelTahunPembuatan"
+        Me.LabelTahunPembuatan.Size = New System.Drawing.Size(117, 20)
+        Me.LabelTahunPembuatan.TabIndex = 29
+        Me.LabelTahunPembuatan.Text = "Tahun Perbuatan"
         '
-        'ComboBox1
+        'ComboBoxJenisMobil
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(160, 102)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 21
+        Me.ComboBoxJenisMobil.FormattingEnabled = True
+        Me.ComboBoxJenisMobil.Location = New System.Drawing.Point(158, 102)
+        Me.ComboBoxJenisMobil.Name = "ComboBoxJenisMobil"
+        Me.ComboBoxJenisMobil.Size = New System.Drawing.Size(151, 28)
+        Me.ComboBoxJenisMobil.TabIndex = 22
         '
-        'TextBox1
+        'TextBoxTipeMobil
         '
-        Me.TextBox1.Location = New System.Drawing.Point(160, 64)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 20
+        Me.TextBoxTipeMobil.Location = New System.Drawing.Point(158, 64)
+        Me.TextBoxTipeMobil.Name = "TextBoxTipeMobil"
+        Me.TextBoxTipeMobil.Size = New System.Drawing.Size(151, 27)
+        Me.TextBoxTipeMobil.TabIndex = 21
         '
-        'Label1
+        'LabelTipeMobil
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 67)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 20)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "Tipe Mobil"
+        Me.LabelTipeMobil.AutoSize = True
+        Me.LabelTipeMobil.Location = New System.Drawing.Point(9, 67)
+        Me.LabelTipeMobil.Name = "LabelTipeMobil"
+        Me.LabelTipeMobil.Size = New System.Drawing.Size(81, 20)
+        Me.LabelTipeMobil.TabIndex = 20
+        Me.LabelTipeMobil.Text = "Tipe Mobil"
         '
         'EditMobil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(329, 354)
-        Me.Controls.Add(Me.Label7)
+        Me.ClientSize = New System.Drawing.Size(331, 391)
+        Me.Controls.Add(Me.TextBoxHargaDefault)
+        Me.Controls.Add(Me.LabelHargaDefault)
+        Me.Controls.Add(Me.LabelTitle)
         Me.Controls.Add(Me.ButtonEditMobil)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LabelJenisMobil)
+        Me.Controls.Add(Me.TextBoxGaransi)
+        Me.Controls.Add(Me.LabelGaransi)
+        Me.Controls.Add(Me.TextBoxHarga)
+        Me.Controls.Add(Me.LabelHarga)
+        Me.Controls.Add(Me.TextBoxKondisi)
+        Me.Controls.Add(Me.LabelKondisi)
+        Me.Controls.Add(Me.TextBoxTahunPembuatan)
+        Me.Controls.Add(Me.LabelTahunPembuatan)
+        Me.Controls.Add(Me.ComboBoxJenisMobil)
+        Me.Controls.Add(Me.TextBoxTipeMobil)
+        Me.Controls.Add(Me.LabelTipeMobil)
         Me.Name = "EditMobil"
         Me.Text = "EditMobil"
         Me.ResumeLayout(False)
@@ -180,18 +200,20 @@ Partial Class EditMobil
 
     End Sub
 
-    Friend WithEvents Label7 As Label
+    Friend WithEvents TextBoxHargaDefault As TextBox
+    Friend WithEvents LabelHargaDefault As Label
+    Friend WithEvents LabelTitle As Label
     Friend WithEvents ButtonEditMobil As Button
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents LabelJenisMobil As Label
+    Friend WithEvents TextBoxGaransi As TextBox
+    Friend WithEvents LabelGaransi As Label
+    Friend WithEvents TextBoxHarga As TextBox
+    Friend WithEvents LabelHarga As Label
+    Friend WithEvents TextBoxKondisi As TextBox
+    Friend WithEvents LabelKondisi As Label
+    Friend WithEvents TextBoxTahunPembuatan As TextBox
+    Friend WithEvents LabelTahunPembuatan As Label
+    Friend WithEvents ComboBoxJenisMobil As ComboBox
+    Friend WithEvents TextBoxTipeMobil As TextBox
+    Friend WithEvents LabelTipeMobil As Label
 End Class
