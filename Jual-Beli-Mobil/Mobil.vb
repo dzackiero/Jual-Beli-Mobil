@@ -2,6 +2,8 @@
     Public Shared dataMobil As DataMobil
     Public Shared dataJenisMobil As DataJenisMobil
     Public selectedIdMobil As Integer
+    Public selectedJenisMobil As Integer
+
 
     Public Sub New()
 
@@ -41,6 +43,8 @@
             selectedRow = DataGridViewMobil.Rows(index)
 
             selectedIdMobil = Int(selectedRow.Cells(0).Value)
+            selectedJenisMobil = Int(selectedRow.Cells(1).Value)
+
         Catch ex As Exception
             MessageBox.Show("Tidak Ada Data Disini.")
         End Try
@@ -61,12 +65,21 @@
             Dim editMobil = New EditMobil()
             editMobil.Show()
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show("Tidak dapat melakukan edit. Error :" + ex.Message)
         End Try
     End Sub
 
     Private Sub ButtonHapusMobil_Click(sender As Object, e As EventArgs) Handles ButtonHapusMobil.Click
-        Dim hapusMobil = New HapusMobil()
-        hapusMobil.Show()
+        Try
+            Dim selectedMobil As List(Of String) = dataMobil.GetDataMobilByIDDatabase(selectedIdMobil)
+
+            selectedJenisMobil = selectedMobil(1)
+
+            Dim hapusMobil = New HapusMobil()
+            hapusMobil.Show()
+        Catch ex As Exception
+            MessageBox.Show("Tidak dapat melakukan hapus. Error :" + ex.Message)
+        End Try
+
     End Sub
 End Class

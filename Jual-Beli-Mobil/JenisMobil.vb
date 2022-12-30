@@ -1,7 +1,7 @@
 ﻿Public Class JenisMobil
     Public Shared datajenismobil As DataJenisMobil
-    Public selectedJenisID As String
-    Public selectedJenisNamaMobil As String
+    Public Shared selectedJenisID As String
+    Public Shared selectedJenisNamaMobil As String
 
     Public Sub New()
 
