@@ -67,10 +67,10 @@ Public Class DataMobil
                          VALUE('" _
                                 & tipe_mobil & "', '" _
                                 & jenis_mobil & "', '" _
-                                & harga & "', '" _
-                                & harga_dasar & "', '" _
                                 & tahun_pembuatan & "', '" _
                                 & kondisi & "', '" _
+                                & harga & "', '" _
+                                & harga_dasar & "', '" _
                                 & False & "', '" _
                                 & garansi & "')"
 
