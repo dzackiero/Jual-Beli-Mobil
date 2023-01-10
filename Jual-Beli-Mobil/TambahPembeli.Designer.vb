@@ -26,9 +26,9 @@ Partial Class TambahPembeli
         Me.nikbeli = New System.Windows.Forms.Label()
         Me.namabeli = New System.Windows.Forms.Label()
         Me.alamatbeli = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.TextBox_nik = New System.Windows.Forms.TextBox()
+        Me.TextBox_nama = New System.Windows.Forms.TextBox()
+        Me.RichTextBox_alamat = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'btntambahpembeli
@@ -67,36 +67,36 @@ Partial Class TambahPembeli
         Me.alamatbeli.TabIndex = 4
         Me.alamatbeli.Text = "Alamat"
         '
-        'TextBox2
+        'TextBox_nik
         '
-        Me.TextBox2.Location = New System.Drawing.Point(109, 23)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(243, 23)
-        Me.TextBox2.TabIndex = 6
+        Me.TextBox_nik.Location = New System.Drawing.Point(109, 23)
+        Me.TextBox_nik.Name = "TextBox_nik"
+        Me.TextBox_nik.Size = New System.Drawing.Size(243, 23)
+        Me.TextBox_nik.TabIndex = 6
         '
-        'TextBox3
+        'TextBox_nama
         '
-        Me.TextBox3.Location = New System.Drawing.Point(109, 65)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(243, 23)
-        Me.TextBox3.TabIndex = 7
+        Me.TextBox_nama.Location = New System.Drawing.Point(109, 65)
+        Me.TextBox_nama.Name = "TextBox_nama"
+        Me.TextBox_nama.Size = New System.Drawing.Size(243, 23)
+        Me.TextBox_nama.TabIndex = 7
         '
-        'RichTextBox1
+        'RichTextBox_alamat
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(109, 104)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(243, 96)
-        Me.RichTextBox1.TabIndex = 8
-        Me.RichTextBox1.Text = ""
+        Me.RichTextBox_alamat.Location = New System.Drawing.Point(109, 104)
+        Me.RichTextBox_alamat.Name = "RichTextBox_alamat"
+        Me.RichTextBox_alamat.Size = New System.Drawing.Size(243, 96)
+        Me.RichTextBox_alamat.TabIndex = 8
+        Me.RichTextBox_alamat.Text = ""
         '
         'TambahPembeli
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(384, 341)
-        Me.Controls.Add(Me.RichTextBox1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.RichTextBox_alamat)
+        Me.Controls.Add(Me.TextBox_nama)
+        Me.Controls.Add(Me.TextBox_nik)
         Me.Controls.Add(Me.alamatbeli)
         Me.Controls.Add(Me.namabeli)
         Me.Controls.Add(Me.nikbeli)
@@ -112,7 +112,7 @@ Partial Class TambahPembeli
     Friend WithEvents nikbeli As Label
     Friend WithEvents namabeli As Label
     Friend WithEvents alamatbeli As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents TextBox_nik As TextBox
+    Friend WithEvents TextBox_nama As TextBox
+    Friend WithEvents RichTextBox_alamat As RichTextBox
 End Class
