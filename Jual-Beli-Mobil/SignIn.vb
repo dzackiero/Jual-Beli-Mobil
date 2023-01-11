@@ -48,13 +48,13 @@ Public Class SignIn
         For i As Integer = 0 To result.Rows.Count - 1
             Dim row As DataRow = result(i)
             Dim newUser As DataUser
-            newUser = New DataUser(row(0), row(1), row(2), row(3))
+            newUser = New DataUser(row(0), row(1), EncryptData(row(2)), row(3))
             arr.Add(newUser)
         Next
         Return arr
     End Function
     Public Function addUser(uuname As String, upassword As String, uemail As String)
-        Dim newUser As DataUser = New DataUser(0, uuname, upassword, uemail)
+        Dim newUser As DataUser = New DataUser(0, uuname, EncryptData(upassword), uemail)
         dbConn.ConnectionString = "server =" + server + ";" +
             "user id=" + username + ";" +
             "password=" + password + ";" +
@@ -64,7 +64,7 @@ Public Class SignIn
             sqlCommand.Connection = dbConn
             sqlQuery = "insert into users(username, pw, email) value('" _
                 & uuname & "', '" _
-                & EncryptData(upassword) & "', '" _
+                & upassword & "', '" _
                 & uemail & "')"
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
@@ -108,7 +108,8 @@ Public Class SignIn
             Next
             If flag Then
                 MessageBox.Show("Logged in")
-                'FormSelanjutnya.Show()
+                Dim mobil = New Mobil()
+                mobil.Show()
             Else
                 MessageBox.Show("Wrong Username or Password!!!!!")
             End If

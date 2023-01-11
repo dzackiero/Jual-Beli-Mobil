@@ -10,9 +10,11 @@ Public Class DataUser
         realUsername = username
         realPassword = password
         realEmail = email
+        'MessageBox.Show(password)
     End Sub
     Public Function CheckAuth(username As String, plainPassword As String) As Boolean
 
+        'MessageBox.Show(SignIn.EncryptData(plainPassword), realPassword)
         If String.Compare(username, realUsername) = 0 And
             String.Compare(SignIn.EncryptData(plainPassword), realPassword) = 0 Then
             Return True
