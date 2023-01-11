@@ -71,9 +71,6 @@
 
     Private Sub ButtonHapusMobil_Click(sender As Object, e As EventArgs) Handles ButtonHapusMobil.Click
         Try
-            Dim selectedMobil As List(Of String) = dataMobil.GetDataMobilByIDDatabase(selectedIdMobil)
-
-            selectedJenisMobil = selectedMobil(1)
 
             Dim hapusMobil = New HapusMobil()
             hapusMobil.Show()

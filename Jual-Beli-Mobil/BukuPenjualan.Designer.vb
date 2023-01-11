@@ -27,11 +27,6 @@ Partial Class BukuPenjualan
         Me.ButtonTambahBuku = New System.Windows.Forms.Button()
         Me.LabelMobil = New System.Windows.Forms.Label()
         Me.DataGridViewBuku = New System.Windows.Forms.DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Mobil = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Pembeli = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Harga_Terjual = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Tanggal_Penjualan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridViewBuku, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -79,7 +74,6 @@ Partial Class BukuPenjualan
         '
         Me.DataGridViewBuku.AllowUserToDeleteRows = False
         Me.DataGridViewBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewBuku.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Mobil, Me.Pembeli, Me.Harga_Terjual, Me.Tanggal_Penjualan})
         Me.DataGridViewBuku.Location = New System.Drawing.Point(12, 39)
         Me.DataGridViewBuku.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridViewBuku.Name = "DataGridViewBuku"
@@ -88,36 +82,6 @@ Partial Class BukuPenjualan
         Me.DataGridViewBuku.RowTemplate.Height = 29
         Me.DataGridViewBuku.Size = New System.Drawing.Size(679, 195)
         Me.DataGridViewBuku.TabIndex = 11
-        '
-        'ID
-        '
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        '
-        'Mobil
-        '
-        Me.Mobil.HeaderText = "Mobil"
-        Me.Mobil.Name = "Mobil"
-        Me.Mobil.ReadOnly = True
-        '
-        'Pembeli
-        '
-        Me.Pembeli.HeaderText = "Pembeli"
-        Me.Pembeli.Name = "Pembeli"
-        Me.Pembeli.ReadOnly = True
-        '
-        'Harga_Terjual
-        '
-        Me.Harga_Terjual.HeaderText = "Harga Terjual"
-        Me.Harga_Terjual.Name = "Harga_Terjual"
-        Me.Harga_Terjual.ReadOnly = True
-        '
-        'Tanggal_Penjualan
-        '
-        Me.Tanggal_Penjualan.HeaderText = "Tanggal Penjualan"
-        Me.Tanggal_Penjualan.Name = "Tanggal_Penjualan"
-        Me.Tanggal_Penjualan.ReadOnly = True
         '
         'BukuPenjualan
         '
@@ -142,9 +106,4 @@ Partial Class BukuPenjualan
     Friend WithEvents ButtonTambahBuku As Button
     Friend WithEvents LabelMobil As Label
     Friend WithEvents DataGridViewBuku As DataGridView
-    Friend WithEvents ID As DataGridViewTextBoxColumn
-    Friend WithEvents Mobil As DataGridViewTextBoxColumn
-    Friend WithEvents Pembeli As DataGridViewTextBoxColumn
-    Friend WithEvents Harga_Terjual As DataGridViewTextBoxColumn
-    Friend WithEvents Tanggal_Penjualan As DataGridViewTextBoxColumn
 End Class

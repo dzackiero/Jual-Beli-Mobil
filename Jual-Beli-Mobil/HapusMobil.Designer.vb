@@ -32,9 +32,9 @@ Partial Class HapusMobil
         '
         Me.LabelTitle.AutoSize = True
         Me.LabelTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LabelTitle.Location = New System.Drawing.Point(32, 17)
+        Me.LabelTitle.Location = New System.Drawing.Point(28, 13)
         Me.LabelTitle.Name = "LabelTitle"
-        Me.LabelTitle.Size = New System.Drawing.Size(192, 38)
+        Me.LabelTitle.Size = New System.Drawing.Size(149, 30)
         Me.LabelTitle.TabIndex = 33
         Me.LabelTitle.Text = "Hapus Mobil?"
         '
@@ -42,39 +42,42 @@ Partial Class HapusMobil
         '
         Me.LabelNama.AutoSize = True
         Me.LabelNama.Font = New System.Drawing.Font("Segoe UI Semibold", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LabelNama.Location = New System.Drawing.Point(107, 70)
+        Me.LabelNama.Location = New System.Drawing.Point(94, 52)
         Me.LabelNama.Name = "LabelNama"
-        Me.LabelNama.Size = New System.Drawing.Size(38, 38)
+        Me.LabelNama.Size = New System.Drawing.Size(28, 30)
         Me.LabelNama.TabIndex = 34
         Me.LabelNama.Text = "..."
         '
         'ButtonHapus
         '
-        Me.ButtonHapus.Location = New System.Drawing.Point(32, 132)
+        Me.ButtonHapus.Location = New System.Drawing.Point(28, 99)
+        Me.ButtonHapus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonHapus.Name = "ButtonHapus"
-        Me.ButtonHapus.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonHapus.Size = New System.Drawing.Size(82, 22)
         Me.ButtonHapus.TabIndex = 35
         Me.ButtonHapus.Text = "Hapus"
         Me.ButtonHapus.UseVisualStyleBackColor = True
         '
         'ButtonBatal
         '
-        Me.ButtonBatal.Location = New System.Drawing.Point(132, 132)
+        Me.ButtonBatal.Location = New System.Drawing.Point(116, 99)
+        Me.ButtonBatal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonBatal.Name = "ButtonBatal"
-        Me.ButtonBatal.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonBatal.Size = New System.Drawing.Size(82, 22)
         Me.ButtonBatal.TabIndex = 36
         Me.ButtonBatal.Text = "Batal"
         Me.ButtonBatal.UseVisualStyleBackColor = True
         '
         'HapusMobil
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(254, 173)
+        Me.ClientSize = New System.Drawing.Size(222, 130)
         Me.Controls.Add(Me.ButtonBatal)
         Me.Controls.Add(Me.ButtonHapus)
         Me.Controls.Add(Me.LabelNama)
         Me.Controls.Add(Me.LabelTitle)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "HapusMobil"
         Me.Text = "HapusMobil"
         Me.ResumeLayout(False)

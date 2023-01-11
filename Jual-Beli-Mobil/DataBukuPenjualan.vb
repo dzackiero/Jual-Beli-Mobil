@@ -4,7 +4,7 @@ Public Class DataBukuPenjualan
     Private id_mobil As Integer
     Private id_pembeli As Integer
     Private harga_terjual As Integer
-    Private tanggal_terjual As Date
+    Private tanggal_terjual As String
 
     Public Shared dbConn As New MySqlConnection
     Public Shared sqlCommand As New MySqlCommand
@@ -28,7 +28,7 @@ Public Class DataBukuPenjualan
                                 id_mobil AS 'Mobil', 
                                 id_pembeli AS 'Pembeli',
                                 harga_terjual AS 'Harga Terjual',
-                                tanggal_penjualan AS 'Tanggal Terjual'
+                                convert(tanggal_penjualan, varchar(255)) AS 'Tanggal Terjual'
                                 FROM buku_penjualan
                                 "
 
@@ -44,15 +44,16 @@ Public Class DataBukuPenjualan
                                         id_mobil As Integer,
                                         id_pembeli As Integer,
                                         harga_terjual As Integer,
-                                        tanggal_terjual As Date
+                                        tanggal_terjual As String
                                         )
         Dim result As New DataTable
+        MessageBox.Show(tanggal_terjual)
 
         dbConn.ConnectionString = "server = " + server + ";" + "user id = " + username + ";" + "password= " + password + ";" + "database=" + database
         Try
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "INSERT INTO mobil(id_mobil, id_pembeli, harga_terjual, tanggal_penjualan)
+            sqlQuery = "INSERT INTO buku_penjualan(id_mobil, id_pembeli, harga_terjual, tanggal_penjualan)
                          VALUE('" _
                                 & id_mobil & "', '" _
                                 & id_pembeli & "', '" _
@@ -66,6 +67,7 @@ Public Class DataBukuPenjualan
             dbConn.Close()
         Catch ex As Exception
             Return ex.Message
+            MessageBox.Show(ex.Message)
         Finally
             dbConn.Dispose()
         End Try
@@ -81,7 +83,7 @@ Public Class DataBukuPenjualan
                                 id_mobil, 
                                 id_pembeli,
                                 harga_terjual,
-                                tanggal_penjualan
+                                convert(tanggal_penjualan, varchar(255))
                             FROM buku_penjualan
                             WHERE id_penjualan ='" & ID & "'"
         sqlRead = sqlCommand.ExecuteReader
@@ -104,7 +106,7 @@ Public Class DataBukuPenjualan
                                         id_mobil As Integer,
                                         id_pembeli As Integer,
                                         harga_terjual As Integer,
-                                        tanggal_terjual As Date
+                                        tanggal_terjual As String
                                         )
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database=" + database
 
@@ -115,7 +117,7 @@ Public Class DataBukuPenjualan
                             "id_mobil='" & id_mobil & "'," &
                             "id_pembeli='" & id_pembeli & "', " &
                             "harga_terjual='" & harga_terjual & "', " &
-                            "tanggal_penjualan='" & harga_terjual & "' " &
+                            "tanggal_penjualan='" & tanggal_terjual & "' " &
                             "WHERE id_penjualan=" & id_buku & ""
 
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
@@ -132,7 +134,7 @@ Public Class DataBukuPenjualan
         End Try
     End Function
 
-    Public Function DeleteBukuMobilDatabase(ID As Integer)
+    Public Function DeleteDataBukuDatabase(ID As Integer)
 
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database =" + database
         Try
@@ -192,11 +194,11 @@ Public Class DataBukuPenjualan
         End Set
     End Property
 
-    Public Property GSTanggalTerjual As Date
+    Public Property GSTanggalTerjual As String
         Get
             Return tanggal_terjual
         End Get
-        Set(value As Date)
+        Set(value As String)
             tanggal_terjual = value
         End Set
     End Property

@@ -117,7 +117,7 @@ Partial Class TambahBukuPenjualan
         '
         'dateTimePickerTanggalPenjualan
         '
-        Me.dateTimePickerTanggalPenjualan.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dateTimePickerTanggalPenjualan.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dateTimePickerTanggalPenjualan.Location = New System.Drawing.Point(149, 136)
         Me.dateTimePickerTanggalPenjualan.Name = "dateTimePickerTanggalPenjualan"
         Me.dateTimePickerTanggalPenjualan.Size = New System.Drawing.Size(133, 23)

@@ -13,4 +13,16 @@
         MessageBox.Show("Berhasil dihapus!")
         Close()
     End Sub
+
+    Private Sub ButtonBatal_Click(sender As Object, e As EventArgs) Handles ButtonBatal.Click
+
+    End Sub
+
+    Private Sub LabelNama_Click(sender As Object, e As EventArgs) Handles LabelNama.Click
+
+    End Sub
+
+    Private Sub LabelTitle_Click(sender As Object, e As EventArgs) Handles LabelTitle.Click
+
+    End Sub
 End Class
