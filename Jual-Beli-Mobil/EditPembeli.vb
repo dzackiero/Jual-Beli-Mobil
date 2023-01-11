@@ -20,6 +20,7 @@ Public Class EditPembeli
             Pembeli.dataPembeli.GSalamat = RichTextBox_editalamat.Text
 
             Pembeli.dataPembeli.EditDataPembeliByIDDatabase(
+                                                    Pembeli.dataPembeli.GSIdPembeli,
                                                     Pembeli.dataPembeli.GSnik,
                                                     Pembeli.dataPembeli.GSnama,
                                                     Pembeli.dataPembeli.GSalamat

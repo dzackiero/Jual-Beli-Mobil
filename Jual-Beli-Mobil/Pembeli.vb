@@ -18,7 +18,7 @@
 
     Public Sub ReloadDataTableDatabase()
         Dim datas = dataPembeli.GetDataPembeliDatabase()
-        DataGridViewPembeli.DataSource = dataPembeli.GetDataMobilDatabase()
+        DataGridViewPembeli.DataSource = dataPembeli.GetDataPembeliDatabase()
     End Sub
 
     Private Sub Button_tambahpembeli_Click(sender As Object, e As EventArgs) Handles Button_tambahpembeli.Click
@@ -48,11 +48,13 @@
         Try
             Dim selectedPembeli As List(Of String) = dataPembeli.GetDataPembeliByIDDatabase(selectedIdPembeli)
 
-            Dim hapusMobil = New HapusMobil()
-            hapusMobil.Show()
+            dataPembeli.GSIdPembeli = selectedIdPembeli
+            dataPembeli.GSnama = selectedPembeli(1)
+
+            Dim hapusMobil = New HapusPembeli()
+            HapusPembeli.Show()
         Catch ex As Exception
             MessageBox.Show("Tidak dapat melakukan hapus. Error:" + ex.Message)
-
         End Try
     End Sub
 

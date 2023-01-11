@@ -50,11 +50,11 @@ Public Class DataPembeli
         Try
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "INSERT INTO pembeli(id_pembeli, nik, nama, alamat)
+            sqlQuery = "INSERT INTO pembeli(nik, nama, alamat)
                         VALUE('" _
-                                & nik & "', '" _
-                                & nama & "', '" _
-                                & alamat & "')"
+                                    & nik & "', '" _
+                                    & nama & "', '" _
+                                    & alamat & "')"
 
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
@@ -98,27 +98,27 @@ Public Class DataPembeli
                                         )
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password=" + password + ";" + "database=" + database
 
-        Try
-            dbConn.Open()
+        'Try
+        dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "UPDATE pembeli SET " &
+        sqlQuery = "UPDATE pembeli SET " &
                             "nik='" & nik & "'," &
                             "nama='" & nama & "', " &
-                            "alamat='" & alamat & "', " &
+                            "alamat='" & alamat & "' " &
                             "WHERE id_pembeli=" & id_pembeli & ""
 
-            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+        sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
 
             dbConn.Close()
             sqlRead.Close()
             dbConn.Close()
 
-        Catch ex As Exception
-            Return ex.Message
-        Finally
-            dbConn.Dispose()
-        End Try
+        'Catch ex As Exception
+        'Return ex.Message
+        'Finally
+        dbConn.Dispose()
+        'End Try
     End Function
 
     Public Function DeleteDataPembeliDatabase(ID As Integer)
