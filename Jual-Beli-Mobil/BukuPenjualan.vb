@@ -75,4 +75,12 @@
             MessageBox.Show("Tidak dapat melakukan edit. Error :" + ex.Message)
         End Try
     End Sub
+
+    Private Sub MobilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MobilToolStripMenuItem.Click
+        Mobil.Show()
+    End Sub
+
+    Private Sub PembeliToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PembeliToolStripMenuItem.Click
+        Pembeli.Show()
+    End Sub
 End Class

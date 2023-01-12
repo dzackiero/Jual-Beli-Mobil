@@ -33,7 +33,7 @@ Partial Class Pembeli
         'DataGridViewPembeli
         '
         Me.DataGridViewPembeli.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewPembeli.Location = New System.Drawing.Point(12, 58)
+        Me.DataGridViewPembeli.Location = New System.Drawing.Point(12, 43)
         Me.DataGridViewPembeli.Name = "DataGridViewPembeli"
         Me.DataGridViewPembeli.RowTemplate.Height = 25
         Me.DataGridViewPembeli.Size = New System.Drawing.Size(654, 263)
@@ -42,16 +42,16 @@ Partial Class Pembeli
         'label_pembeli
         '
         Me.label_pembeli.AutoSize = True
-        Me.label_pembeli.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.label_pembeli.Location = New System.Drawing.Point(12, 34)
+        Me.label_pembeli.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.label_pembeli.Location = New System.Drawing.Point(12, 10)
         Me.label_pembeli.Name = "label_pembeli"
-        Me.label_pembeli.Size = New System.Drawing.Size(73, 21)
+        Me.label_pembeli.Size = New System.Drawing.Size(86, 30)
         Me.label_pembeli.TabIndex = 1
         Me.label_pembeli.Text = "Pembeli"
         '
         'Button_tambahpembeli
         '
-        Me.Button_tambahpembeli.Location = New System.Drawing.Point(434, 35)
+        Me.Button_tambahpembeli.Location = New System.Drawing.Point(429, 14)
         Me.Button_tambahpembeli.Name = "Button_tambahpembeli"
         Me.Button_tambahpembeli.Size = New System.Drawing.Size(75, 23)
         Me.Button_tambahpembeli.TabIndex = 2
@@ -60,7 +60,7 @@ Partial Class Pembeli
         '
         'Button_editpembeli
         '
-        Me.Button_editpembeli.Location = New System.Drawing.Point(513, 35)
+        Me.Button_editpembeli.Location = New System.Drawing.Point(510, 14)
         Me.Button_editpembeli.Name = "Button_editpembeli"
         Me.Button_editpembeli.Size = New System.Drawing.Size(75, 23)
         Me.Button_editpembeli.TabIndex = 3
@@ -69,7 +69,7 @@ Partial Class Pembeli
         '
         'Button_hapuspembeli
         '
-        Me.Button_hapuspembeli.Location = New System.Drawing.Point(591, 35)
+        Me.Button_hapuspembeli.Location = New System.Drawing.Point(591, 14)
         Me.Button_hapuspembeli.Name = "Button_hapuspembeli"
         Me.Button_hapuspembeli.Size = New System.Drawing.Size(75, 23)
         Me.Button_hapuspembeli.TabIndex = 4
@@ -80,7 +80,7 @@ Partial Class Pembeli
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(678, 450)
+        Me.ClientSize = New System.Drawing.Size(678, 318)
         Me.Controls.Add(Me.Button_hapuspembeli)
         Me.Controls.Add(Me.Button_editpembeli)
         Me.Controls.Add(Me.Button_tambahpembeli)

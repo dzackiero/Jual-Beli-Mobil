@@ -108,10 +108,10 @@ Public Class SignIn
             Next
             If flag Then
                 MessageBox.Show("Logged in")
-                Dim tester = New tester()
-                tester.Show()
+                BukuPenjualan.Show()
+                Hide()
             Else
-                MessageBox.Show("Wrong Username or Password!!!!!")
+                MessageBox.Show("Wrong Username or Password")
             End If
 
         Catch ex As Exception
@@ -125,7 +125,8 @@ Public Class SignIn
     End Sub
 
     Private Sub linkLabelSignUp_Click(sender As Object, e As EventArgs) Handles linkLabelSignUp.Click
-        Dim signUpForm = New signUp()
+        Dim signUpForm = New SignUp()
         signUpForm.Show()
     End Sub
+
 End Class

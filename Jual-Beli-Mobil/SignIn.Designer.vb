@@ -35,7 +35,7 @@ Partial Class SignIn
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 106)
+        Me.Label1.Location = New System.Drawing.Point(30, 80)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 15)
         Me.Label1.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class SignIn
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(31, 162)
+        Me.Label2.Location = New System.Drawing.Point(30, 136)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 15)
         Me.Label2.TabIndex = 1
@@ -52,24 +52,24 @@ Partial Class SignIn
         '
         'textBoxUsername
         '
-        Me.textBoxUsername.Location = New System.Drawing.Point(129, 106)
+        Me.textBoxUsername.Location = New System.Drawing.Point(96, 77)
         Me.textBoxUsername.Name = "textBoxUsername"
-        Me.textBoxUsername.Size = New System.Drawing.Size(100, 23)
-        Me.textBoxUsername.TabIndex = 2
+        Me.textBoxUsername.Size = New System.Drawing.Size(132, 23)
+        Me.textBoxUsername.TabIndex = 1
         '
         'buttonLogin
         '
-        Me.buttonLogin.Location = New System.Drawing.Point(257, 326)
+        Me.buttonLogin.Location = New System.Drawing.Point(153, 219)
         Me.buttonLogin.Name = "buttonLogin"
         Me.buttonLogin.Size = New System.Drawing.Size(75, 23)
-        Me.buttonLogin.TabIndex = 4
+        Me.buttonLogin.TabIndex = 3
         Me.buttonLogin.Text = "Login"
         Me.buttonLogin.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 215)
+        Me.Label3.Location = New System.Drawing.Point(30, 179)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(128, 15)
         Me.Label3.TabIndex = 5
@@ -78,35 +78,36 @@ Partial Class SignIn
         'linkLabelSignUp
         '
         Me.linkLabelSignUp.AutoSize = True
-        Me.linkLabelSignUp.Location = New System.Drawing.Point(31, 240)
+        Me.linkLabelSignUp.Location = New System.Drawing.Point(164, 179)
         Me.linkLabelSignUp.Name = "linkLabelSignUp"
         Me.linkLabelSignUp.Size = New System.Drawing.Size(51, 15)
-        Me.linkLabelSignUp.TabIndex = 6
+        Me.linkLabelSignUp.TabIndex = 4
         Me.linkLabelSignUp.TabStop = True
         Me.linkLabelSignUp.Text = "Sign Up!"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(54, 57)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(84, 22)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(37, 15)
+        Me.Label4.Size = New System.Drawing.Size(74, 32)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Login"
         '
         'textBoxPassword
         '
-        Me.textBoxPassword.Location = New System.Drawing.Point(129, 162)
+        Me.textBoxPassword.Location = New System.Drawing.Point(96, 133)
         Me.textBoxPassword.Name = "textBoxPassword"
-        Me.textBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9734)
-        Me.textBoxPassword.Size = New System.Drawing.Size(100, 23)
-        Me.textBoxPassword.TabIndex = 9
+        Me.textBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.textBoxPassword.Size = New System.Drawing.Size(132, 23)
+        Me.textBoxPassword.TabIndex = 2
         '
         'SignIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(344, 361)
+        Me.ClientSize = New System.Drawing.Size(261, 264)
         Me.Controls.Add(Me.textBoxPassword)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.linkLabelSignUp)
@@ -116,7 +117,7 @@ Partial Class SignIn
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "SignIn"
-        Me.Text = "SignIn"
+        Me.Text = "Sign In"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class signUp
+Partial Class SignUp
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -34,25 +34,26 @@ Partial Class signUp
         '
         'textBoxPassword
         '
-        Me.textBoxPassword.Location = New System.Drawing.Point(129, 217)
+        Me.textBoxPassword.Location = New System.Drawing.Point(97, 178)
         Me.textBoxPassword.Name = "textBoxPassword"
-        Me.textBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9734)
-        Me.textBoxPassword.Size = New System.Drawing.Size(100, 23)
-        Me.textBoxPassword.TabIndex = 17
+        Me.textBoxPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.textBoxPassword.Size = New System.Drawing.Size(144, 23)
+        Me.textBoxPassword.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(54, 57)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(89, 33)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 15)
+        Me.Label4.Size = New System.Drawing.Size(99, 32)
         Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Sign up"
+        Me.Label4.Text = "Sign Up"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(31, 162)
+        Me.Label3.Location = New System.Drawing.Point(31, 146)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 15)
         Me.Label3.TabIndex = 14
@@ -60,24 +61,24 @@ Partial Class signUp
         '
         'buttonCreate
         '
-        Me.buttonCreate.Location = New System.Drawing.Point(257, 326)
+        Me.buttonCreate.Location = New System.Drawing.Point(166, 237)
         Me.buttonCreate.Name = "buttonCreate"
         Me.buttonCreate.Size = New System.Drawing.Size(75, 23)
-        Me.buttonCreate.TabIndex = 13
-        Me.buttonCreate.Text = "Create"
+        Me.buttonCreate.TabIndex = 4
+        Me.buttonCreate.Text = "Sign Up"
         Me.buttonCreate.UseVisualStyleBackColor = True
         '
         'textBoxUsername
         '
-        Me.textBoxUsername.Location = New System.Drawing.Point(129, 106)
+        Me.textBoxUsername.Location = New System.Drawing.Point(97, 98)
         Me.textBoxUsername.Name = "textBoxUsername"
-        Me.textBoxUsername.Size = New System.Drawing.Size(100, 23)
-        Me.textBoxUsername.TabIndex = 12
+        Me.textBoxUsername.Size = New System.Drawing.Size(144, 23)
+        Me.textBoxUsername.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(31, 217)
+        Me.Label2.Location = New System.Drawing.Point(31, 181)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 15)
         Me.Label2.TabIndex = 11
@@ -94,16 +95,16 @@ Partial Class signUp
         '
         'textBoxEmail
         '
-        Me.textBoxEmail.Location = New System.Drawing.Point(129, 162)
+        Me.textBoxEmail.Location = New System.Drawing.Point(97, 138)
         Me.textBoxEmail.Name = "textBoxEmail"
-        Me.textBoxEmail.Size = New System.Drawing.Size(100, 23)
-        Me.textBoxEmail.TabIndex = 18
+        Me.textBoxEmail.Size = New System.Drawing.Size(144, 23)
+        Me.textBoxEmail.TabIndex = 2
         '
-        'signUp
+        'SignUp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(344, 361)
+        Me.ClientSize = New System.Drawing.Size(274, 284)
         Me.Controls.Add(Me.textBoxEmail)
         Me.Controls.Add(Me.textBoxPassword)
         Me.Controls.Add(Me.Label4)
@@ -112,8 +113,8 @@ Partial Class signUp
         Me.Controls.Add(Me.textBoxUsername)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "signUp"
-        Me.Text = "signUp"
+        Me.Name = "SignUp"
+        Me.Text = "Sign Up"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
