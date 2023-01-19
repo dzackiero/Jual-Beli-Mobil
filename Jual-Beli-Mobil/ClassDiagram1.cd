@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Jual_Beli_Mobil.BukuPenjualan">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAAQCgKAAAQAAIAaBgAAqAACRQACAIAAAEAEAAAA=</HashCode>
+      <FileName>BukuPenjualan.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.DataBukuPenjualan">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAACAAABABAABAgAAgAAMARAEIAAAAAAAEhgQgAII=</HashCode>
+      <FileName>DataBukuPenjualan.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.DataJenisMobil">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAgABAABAIAAgAAEQAAAAAAgAAAEQAgQgAAI=</HashCode>
+      <FileName>DataJenisMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.DataMobil">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAADABAoAAAABEgAAgEAEANAAMQQAAEAEAAgQiBEI=</HashCode>
+      <FileName>DataMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.DataPembeli">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACCBAABCAACBAAAAgEAEAAEEEBAAAADACAgQgAAI=</HashCode>
+      <FileName>DataPembeli.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.DataUser">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAhAAACAAAEAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataUser.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.EditBukuPenjualan">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAAACFKAABAAAAACQAQACAAAAAAAAAAIAAgEAAAA=</HashCode>
+      <FileName>EditBukuPenjualan.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.EditJenisMobil">
+    <Position X="7.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAGCAAAAAAAACAABACBAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EditJenisMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.EditMobil">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAIABABSAABAAAACCQIQACAAAAAAmAABAAACCAAEA=</HashCode>
+      <FileName>EditMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.EditPembeli">
+    <Position X="12.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAECAABAAAAACAAAADIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>EditPembeli.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.HapusBukuPenjualan">
+    <Position X="4" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAACQAAAIAAACQAAACAAAACAAAAQAAAAAAAAA=</HashCode>
+      <FileName>HapusBukuPenjualan.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.HapusJenisMobil">
+    <Position X="5.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAgAAgACAAAACAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>HapusJenisMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.HapusMobil">
+    <Position X="9.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAACQAAAIAAACQAAACAACAAAAAgQAQAAAAAAA=</HashCode>
+      <FileName>HapusMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.HapusPembeli">
+    <Position X="12.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAAAAAAAGAAAACAABAAAAAAAADAAAAAAA=</HashCode>
+      <FileName>HapusPembeli.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.JenisMobil">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEjAEAAUACACCAAUSAgAAAAAAAAAIAAAAAAQ=</HashCode>
+      <FileName>JenisMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.Mobil">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgACAQAwOAAAAAACACAgIAGAAAAAQAAAAEAACAgAAA=</HashCode>
+      <FileName>Mobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.Pembeli">
+    <Position X="9.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQBIAAmAAABEIAACAgAACAAAAAAAAAgACEAAAAAA=</HashCode>
+      <FileName>Pembeli.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.SignIn">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIACAgECAAAABAAQCgCAESAAAAAQAAQQAAIgYgAAI=</HashCode>
+      <FileName>SignIn.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.SignUp">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAECAAQAAAAACAABACAAAAAAAAAQAAAAIAAAA=</HashCode>
+      <FileName>signUp.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.TambahBukuPenjualan">
+    <Position X="2.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAgACFCAABAAAAACQAYASAABBAAAAiQMIQgAAAAA=</HashCode>
+      <FileName>TambahBukuPenjualan.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.TambahJenisMobil">
+    <Position X="7.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAAAAACAAAACAAAAIEAAAAAAAAAAAAA=</HashCode>
+      <FileName>TambahJenisMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.TambahMobil">
+    <Position X="11" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAIABABSAABAAAACCQIQACAAAAAAmAABEAAACgAEA=</HashCode>
+      <FileName>TambahMobil.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.TambahPembeli">
+    <Position X="11" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAIAAACAAAACAOAAAAAAAAAJAAAAEIA=</HashCode>
+      <FileName>TambahPembeli.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.tester">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAACAAABAAFACAQAAGAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>tester.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jual_Beli_Mobil.My.MyApplication">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApplicationEvents.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
